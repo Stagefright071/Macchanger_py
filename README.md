@@ -6,7 +6,7 @@ Since Mac addresses are unique, changing them has many uses, example anonymity.
 
 To install, run install.sh according to your linux distro.
 
-Windows and MacOS are NOT supported.
+Windows and MacOS are NOT supported. MacOS might work but is not tested
 
 To install manually:
 
