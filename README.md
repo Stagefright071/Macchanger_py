@@ -12,12 +12,13 @@ To install manually:
 
 Ubuntu/Debian-based/kali -
 ```
-sudo apt install python3 python3-pip net-tools
-sudo python3 -m pip install -r requirements.txt
-sudo cp bin/Macchanger.py /bin/macchangerpy
+sudo apt install git
+git clone gttps://github.com/Stagefright071/Macchanger_py
+sudo ./install.sh
 ```
 
-Fedora/fedora-based -
-```
-yum install net-tools
-```
+Other distros -
+
+install git, python3, python3-pip, net-tools(ifconfig has to be present)
+sudo python3 -m pip install -r requirements.txt
+sudo cp bin/Macchanger.py /bin/macchangerpy
