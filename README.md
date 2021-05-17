@@ -9,6 +9,8 @@ To install, run install.sh according to your linux distro.
 Windows and MacOS are NOT supported.
 
 To install manually,
-'''javascript
-test
-'''
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
