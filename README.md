@@ -10,7 +10,10 @@ Windows and MacOS are NOT supported. MacOS might work but is not tested
 
 ---INSTALL---
 
-Run the respective install script as root. (sudo ./scriptname)
+Run the respective install script as root.
+```
+sudo ./respectivescriptname
+```
 
 Other distros or to install manually -
 
