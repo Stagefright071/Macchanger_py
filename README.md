@@ -11,17 +11,17 @@ To install, run install.sh according to your linux distro.
 
 Windows and MacOS are NOT supported. MacOS might work but is not tested
 
----INSTALL---
+**_Install_**
 
-Run the respective install script as root.
+> Run the respective install script as root.
 ```
 git clone https://github.com/Stagefright071/Macchanger_py.git
 sudo ./install-yourdistro
 ```
 
-Other distros or to install manually -
+> Other distros or to install manually -
 
-install git, python3, python3-pip, net-tools(ifconfig has to be present)
+> Install git, python3, python3-pip, net-tools(ifconfig has to be present)
 ```
 sudo python3 -m pip install -r requirements.txt
 sudo cp bin/Macchanger.py /bin/macchangerpy
