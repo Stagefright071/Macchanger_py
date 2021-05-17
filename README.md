@@ -8,16 +8,10 @@ To install, run install.sh according to your linux distro.
 
 Windows and MacOS are NOT supported. MacOS might work but is not tested
 
-To install manually:
+---INSTALL---
+Run the respective install script as root. (sudo ./scriptname)
 
-Ubuntu/Debian-based/kali -
-```
-sudo apt install git
-git clone gttps://github.com/Stagefright071/Macchanger_py
-sudo ./install.sh
-```
-
-Other distros -
+Other distros or to install manually -
 
 install git, python3, python3-pip, net-tools(ifconfig has to be present)
 ```
