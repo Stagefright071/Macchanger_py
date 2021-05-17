@@ -53,7 +53,7 @@ if option == "1":
     subprocess.call("ifconfig " + network_card + " down", shell=True)
     subprocess.call("ifconfig " + network_card+ " hw ether " + str(random_mac), shell=True)
     subprocess.call("ifconfig " + network_card + " up", shell=True)
-    print("Changed Mac address to " + random_mac)
+    print("Changed Mac address to " + str(random_mac))
 elif option == "2":
     mac_address_chosen = input("\nWhat Mac do you want me to change your network card to? \n\n>")
     subprocess.call("ifconfig " + network_card + " down", shell=True)
