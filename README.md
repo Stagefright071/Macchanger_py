@@ -20,5 +20,7 @@ sudo ./install.sh
 Other distros -
 
 install git, python3, python3-pip, net-tools(ifconfig has to be present)
+```
 sudo python3 -m pip install -r requirements.txt
 sudo cp bin/Macchanger.py /bin/macchangerpy
+```
