@@ -9,8 +9,9 @@ To install, run install.sh according to your linux distro.
 Windows and MacOS are NOT supported.
 
 To install manually,
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
+Ubuntu
+'''
+sudo apt install python3 python3-pip net-tools
+sudo python3 -m pip install -r requirements.txt
+sudo cp bin/Macchanger.py /bin/macchangerpy > /dev/null
+'''
