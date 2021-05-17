@@ -12,7 +12,8 @@ Windows and MacOS are NOT supported. MacOS might work but is not tested
 
 Run the respective install script as root.
 ```
-sudo ./respectivescriptname
+git clone https://github.com/Stagefright071/Macchanger_py.git
+sudo ./install-yourdistro
 ```
 
 Other distros or to install manually -
