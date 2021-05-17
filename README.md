@@ -10,9 +10,14 @@ Windows and MacOS are NOT supported.
 
 To install manually:
 
-Ubuntu -
+Ubuntu/Debian-based/kali -
 ```
 sudo apt install python3 python3-pip net-tools
 sudo python3 -m pip install -r requirements.txt
-sudo cp bin/Macchanger.py /bin/macchangerpy > /dev/null
+sudo cp bin/Macchanger.py /bin/macchangerpy
+```
+
+Fedora/fedora-based -
+```
+yum install net-tools
 ```
