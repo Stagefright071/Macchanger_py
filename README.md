@@ -9,6 +9,7 @@ To install, run install.sh according to your linux distro.
 Windows and MacOS are NOT supported.
 
 To install manually:
+
 Ubuntu -
 ```
 sudo apt install python3 python3-pip net-tools
