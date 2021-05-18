@@ -29,6 +29,18 @@ else:
 #Generate random mac
 random_mac = RandMac()
 
+#function
+def mac_change_random(network_card, random_mac):
+    subprocess.call(["ifconfig", network_card, "down"])
+    subprocess.call(["ifconfig", network_card, "hw", "ether", str(random_mac)])
+    subprocess.call(["ifconfig", network_card, "up"])
+    print("Changed Mac address to " + str(random_mac))
+
+def mac_change_specific(network_card, specified_mac):
+    subprocess.call(["ifconfig", network_card, "down"])
+    subprocess.call(["ifconfig", network_card, "hw", "ether", specified_mac])
+    subprocess.call(["ifconfig", network_card, "up"])
+
 #pick a network card
 cards = os.listdir('/sys/class/net/')
 print(str(cards) + "\n")
@@ -50,15 +62,10 @@ option = input(
 )
 
 if option == "1":
-    subprocess.call(["ifconfig", network_card, "down"])
-    subprocess.call(["ifconfig", network_card, "hw", "ether", str(random_mac)])
-    subprocess.call(["ifconfig", network_card, "up"])
-    print("Changed Mac address to " + str(random_mac))
+    mac_change_random(network_card, random_mac)
 elif option == "2":
-    mac_address_chosen = input("\nWhat Mac do you want me to change your network card to? \n\n>")
-    subprocess.call(["ifconfig", network_card, "down"])
-    subprocess.call(["ifconfig", network_card, "hw", "ether", mac_address_chosen])
-    subprocess.call(["ifconfig", network_card, "up"])
+    specified_mac = input("What do you want to change the MAC address to?\n\n >")
+    mac_change_specific(network_card, specified_mac)
 else:
     print("That's not a valid input.")
 
