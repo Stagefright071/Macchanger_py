@@ -59,6 +59,7 @@ ifconfig_output = subprocess.check_output(["ifconfig", network_card])
 original_mac_result = re.search( r"\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", str(ifconfig_output))
 original_mac = original_mac_result.group(0)
 
+#Check if original mac contains a value
 if original_mac:
     pass
 else:
@@ -69,6 +70,7 @@ else:
 current_mac = get_mac_address(interface=network_card)
 
 print("\nYour Current Mac is: " + str(current_mac) + "\n")
+#Options
 option = input(
     '''
     Pick one:
@@ -80,6 +82,7 @@ option = input(
     >'''
 )
 
+#Option results
 if option == "1":
     mac_change_random(network_card, random_mac)
     if original_mac == random_mac:
@@ -99,7 +102,7 @@ elif option == "2":
         print("\nMAC address has been changed to " + str(specified_mac))
     else:
         print("Unidentified error")
-
+#Input validation
 else:
     print("That's not a valid input.")
 
