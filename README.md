@@ -13,16 +13,9 @@ Windows and MacOS are NOT supported and will not work.
 
 **_Install_**
 
-> Run the respective install script as root.
 ```
-git clone https://github.com/Stagefright071/Macchanger_py.git
-sudo ./install-yourdistro
+git clone https://github.com/stagefright071/macchanger_py.git
+python3 -m pip install -r requirements.txt
 ```
-
-> Other distros or to install manually -
-
-> Install git, python3, python3-pip, net-tools(ifconfig has to be present)
-```
-sudo python3 -m pip install -r requirements.txt
-sudo cp bin/Macchanger.py /bin/macchangerpy
-```
+Then run Macchanger.py as root or administrator.
+You may have to run python3 -m pip install -r requirements.txt as root as well.
