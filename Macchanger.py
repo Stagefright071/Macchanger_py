@@ -46,7 +46,8 @@ def mac_change_specific(network_card, specified_mac):
 
 #pick a network card
 cards = os.listdir('/sys/class/net/')
-print(str(cards) + "\n")
+for i in cards:
+    print(f'{i}\n')
 network_card = input("What is the name of your network card?: ")
 
 #fiter out lo
@@ -79,7 +80,7 @@ option = input(
 
     2. Specific Mac (You will be asked to specify a Mac address)
 
-    >'''
+    >''' 
 )
 
 #Option results
