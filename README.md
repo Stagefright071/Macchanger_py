@@ -4,7 +4,7 @@ Since Mac addresses are unique, changing them has many uses, example anonymity.
 
 ```
 Made By Raghuram Subramani
-https://github.com/Stagefright071
+https://github.com/compromyse
 
 ███╗░░░███╗░█████╗░░█████╗░░█████╗░██╗░░██╗░█████╗░███╗░░██╗░██████╗░███████╗██████╗░░░░██████╗░██╗░░░██╗
 ████╗░████║██╔══██╗██╔══██╗██╔══██╗██║░░██║██╔══██╗████╗░██║██╔════╝░██╔════╝██╔══██╗░░░██╔══██╗╚██╗░██╔╝
@@ -59,7 +59,7 @@ Arch based: $ sudo pacman -S python python-pip
 
 > Clone git repository
 ```
-git clone https://github.com/Stagefright071/Macchanger_py
+git clone https://github.com/compromyse/Macchanger_py
 ```
 
 > Install script requirements
